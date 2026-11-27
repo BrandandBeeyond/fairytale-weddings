@@ -19,6 +19,69 @@ export default function BlogsPage() {
                   <div className="card shadow bg-transparent rounded-4 border-0 h-100">
                     <img
                       decoding="async"
+                      src="/assets/img/banners/vowbanner.jpg"
+                      className="card-img-top object-fit-cover"
+                      style={{ height: "300px" }}
+                      alt="This Wedding Season, Say &apos;I Do&apos; in the Beautiful Hills of Touchwood Bliss"
+                      loading="lazy"
+                    />
+                    <div className="card-body bg-transparent">
+                      <h5 className="card-title">This Wedding Season, Say &lsquo;I Do&rsquo; in the Beautiful Hills of Touchwood Bliss</h5>
+                      <p className="card-text text-muted">
+                        Fresh air, open skies and mountain views. Discover why couples are choosing the hills of Igatpuri for a calm, beautiful and deeply personal destination wedding.
+                      </p>
+                      <a href="/say-i-do-in-the-beautiful-hills-of-touchwood-bliss" className="btn sendform-btn">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="card shadow bg-transparent rounded-4 border-0 h-100">
+                    <img
+                      decoding="async"
+                      src="/assets/img/slider3.jpeg"
+                      className="card-img-top object-fit-cover"
+                      style={{ height: "300px" }}
+                      alt="Make This Wedding Season Unforgettable with Touchwood Bliss Resort, Igatpuri"
+                      loading="lazy"
+                    />
+                    <div className="card-body bg-transparent">
+                      <h5 className="card-title">Make This Wedding Season Unforgettable with Touchwood Bliss Resort, Igatpuri</h5>
+                      <p className="card-text text-muted">
+                        Venue, stay, pure veg food and planning in one place. A simple guide to a stress-free destination wedding near Mumbai.
+                      </p>
+                      <a href="/make-this-wedding-season-unforgettable-touchwood-bliss-resort-igatpuri" className="btn sendform-btn">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="card shadow bg-transparent rounded-4 border-0 h-100">
+                    <img
+                      decoding="async"
+                      src="/assets/img/best-wedding-resort-near-mumbai.jpeg"
+                      className="card-img-top object-fit-cover"
+                      style={{ height: "300px" }}
+                      alt="Your Dream Wedding Awaits: Celebrate This Season at Touchwood Bliss"
+                      loading="lazy"
+                    />
+                    <div className="card-body bg-transparent">
+                      <h5 className="card-title">Your Dream Wedding Awaits: Celebrate This Season at Touchwood Bliss</h5>
+                      <p className="card-text text-muted">
+                        Imagine your wedding day by the mountains, then make it real. Plan a heartcrafted celebration shaped around your story and your families.
+                      </p>
+                      <a href="/your-dream-wedding-awaits-celebrate-this-season-at-touchwood-bliss" className="btn sendform-btn">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="card shadow bg-transparent rounded-4 border-0 h-100">
+                    <img
+                      decoding="async"
                       src="/assets/img/weddings/weddingbanner.webp"
                       className="card-img-top object-fit-cover"
                       style={{ height: "300px" }}
