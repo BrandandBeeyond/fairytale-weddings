@@ -28,6 +28,9 @@ import P2026HinduWeddingDatesWithShubhMuhuratPage from "./P2026HinduWeddingDates
 import TopReasonsTouchwoodBlissPerfectPureVegWeddingVenuePage from "./TopReasonsTouchwoodBlissPerfectPureVegWeddingVenuePage";
 import WhereDreamsMeetTheMountainsPage from "./WhereDreamsMeetTheMountainsPage";
 import WhereForeverBeginsMagicalMountainWeddingNearMumbaiPage from "./WhereForeverBeginsMagicalMountainWeddingNearMumbaiPage";
+import SayIDoInTheBeautifulHillsOfTouchwoodBlissPage from "./SayIDoInTheBeautifulHillsOfTouchwoodBlissPage";
+import MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage from "./MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage";
+import YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage from "./YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage";
 
 export const PAGE_COMPONENTS = {
   "2026-hindu-wedding-dates-with-shubh-muhurat": P2026HinduWeddingDatesWithShubhMuhuratPage,
@@ -57,4 +60,7 @@ export const PAGE_COMPONENTS = {
   "top-reasons-touchwood-bliss-perfect-pure-veg-wedding-venue": TopReasonsTouchwoodBlissPerfectPureVegWeddingVenuePage,
   "where-dreams-meet-the-mountains": WhereDreamsMeetTheMountainsPage,
   "where-forever-begins-magical-mountain-wedding-near-mumbai": WhereForeverBeginsMagicalMountainWeddingNearMumbaiPage,
+  "say-i-do-in-the-beautiful-hills-of-touchwood-bliss": SayIDoInTheBeautifulHillsOfTouchwoodBlissPage,
+  "make-this-wedding-season-unforgettable-touchwood-bliss-resort-igatpuri": MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage,
+  "your-dream-wedding-awaits-celebrate-this-season-at-touchwood-bliss": YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage,
 };
