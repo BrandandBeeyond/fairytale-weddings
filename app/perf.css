@@ -1,0 +1,39 @@
+/* Smoothness fixes. None of these change how anything looks. */
+
+/* Big decorative flower/leaf SVGs: give them their own GPU layer so they are not
+   repainted on every scroll frame (existing transforms/rotations are untouched). */
+img[class*="dhabba"],
+.workcut,
+.flowersuser,
+.leftleaf,
+.rightleaf {
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* Blur filters are the most expensive thing on the page: keep them on their own layer */
+.testi-user {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Full-screen menu: the original centred the list with top:50% + translateY(-50%),
+   which cut off the logo and first items on shorter screens. Centre it with flex
+   instead: identical on tall screens, scrollable (nothing hidden) on short ones. */
+.menu-wrapper > .container-fluid {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-wrapper .main-menu {
+  position: relative;
+  top: auto;
+  transform: none;
+  padding: 24px 0;
+}
