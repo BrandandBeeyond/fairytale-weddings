@@ -2,13 +2,6 @@
 import { useEffect, useRef } from "react";
 import "./blog-extras.css";
 
-// Adds the interactive bits of the blog layout:
-//  - reading progress bar
-//  - scroll reveal (.tbw-reveal and every direct child of .tbw-article -> .is-in)
-//  - count-up numbers ([data-count])
-//  - hero parallax
-//  - "In this guide" contents box for long articles
-// Render <BlogEnhancer /> once inside every page that uses <div className="tbw-blog">.
 export default function BlogEnhancer() {
   const bar = useRef(null);
 
