@@ -4,9 +4,10 @@ import "./blog-extras.css";
 
 // Adds the interactive bits of the blog layout:
 //  - reading progress bar
-//  - scroll reveal (.tbw-reveal -> .is-in)
+//  - scroll reveal (.tbw-reveal and every direct child of .tbw-article -> .is-in)
 //  - count-up numbers ([data-count])
 //  - hero parallax
+//  - "In this guide" contents box for long articles
 // Render <BlogEnhancer /> once inside every page that uses <div className="tbw-blog">.
 export default function BlogEnhancer() {
   const bar = useRef(null);
@@ -18,6 +19,36 @@ export default function BlogEnhancer() {
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const bg = root.querySelector(".tbw-hero__bg");
+    const article = root.querySelector(".tbw-article");
+
+    // ----- contents box -----
+    let toc = null;
+    if (article && !article.querySelector(".tbw-toc")) {
+      const h2s = [...article.querySelectorAll("h2")];
+      const heads = h2s.length >= 3 ? h2s : [...article.querySelectorAll("h3")];
+      if (heads.length >= 4) {
+        toc = document.createElement("details");
+        toc.className = "tbw-toc";
+        toc.open = true;
+        const sum = document.createElement("summary");
+        sum.textContent = "In this guide";
+        const list = document.createElement("ol");
+        heads.forEach((h, i) => {
+          if (!h.id) h.id = `tbw-sec-${i + 1}`;
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = `#${h.id}`;
+          a.textContent = h.textContent.trim();
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+        toc.append(sum, list);
+        // place it after the intro, right before the first heading
+        let anchor = heads[0];
+        while (anchor.parentElement && anchor.parentElement !== article) anchor = anchor.parentElement;
+        article.insertBefore(toc, anchor.parentElement === article ? anchor : article.firstChild);
+      }
+    }
 
     // ----- progress bar + parallax -----
     let ticking = false;
@@ -47,8 +78,12 @@ export default function BlogEnhancer() {
           }
         });
       },
-      { threshold: 0.14, rootMargin: "0px 0px -6% 0px" }
+      // threshold 0 so very tall blocks still reveal
+      { threshold: 0, rootMargin: "0px 0px -8% 0px" }
     );
+    if (article) {
+      [...article.children].forEach((el) => el.classList.add("tbw-reveal"));
+    }
     root.querySelectorAll(".tbw-reveal").forEach((el) => revealIO.observe(el));
 
     // ----- count-up numbers -----
@@ -90,6 +125,7 @@ export default function BlogEnhancer() {
       window.removeEventListener("scroll", onScroll);
       revealIO.disconnect();
       countIO.disconnect();
+      if (toc && toc.parentNode) toc.parentNode.removeChild(toc);
     };
   }, []);
 

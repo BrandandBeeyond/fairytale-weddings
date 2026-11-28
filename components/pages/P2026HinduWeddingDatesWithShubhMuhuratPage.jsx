@@ -1,5 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BlogEnhancer from "@/components/blog/BlogEnhancer";
+import { Hero, Stats, SectionTitle, Marquee, CtaBand, Related } from "@/components/blog/BlogParts";
 
 export default function P2026HinduWeddingDatesWithShubhMuhuratPage() {
   return (
@@ -7,22 +9,32 @@ export default function P2026HinduWeddingDatesWithShubhMuhuratPage() {
       <div className="viewport">
         <main className="overflow-hidden">
           <Header />
-          <section className="position-relative">
-            <div className="position-relative">
-              <img
-                src="/assets/img/weddingm/muhurt-banner.png"
-                className="img-fluid rounded mb-4"
-                alt="2026 Wedding Muhurat Dates"
-              />
-            </div>
-          </section>
-          <section className="sec-padding position-relative">
-            <div className="container">
-              <h1 className="text-head sec_title offerhead">2026 Wedding Muhurat Dates</h1>
+          <div className="tbw-blog">
+            <BlogEnhancer />
+
+            <Hero
+              image="/assets/img/weddingm/muhurt-banner.png"
+              alt="2026 Wedding Muhurat Dates"
+              kicker="Wedding Guide · Touchwood Bliss"
+              title="2026 Wedding Muhurat Dates"
+              meta={["Touchwood Bliss, Igatpuri", "3 min read", "Destination wedding guide"]}
+              fx="petals"
+            />
+
+            <Stats
+              items={[
+                { value: 4.8, decimals: 1, suffix: "/5", label: "Google rating" },
+                { value: 13000, suffix: "+", label: "Google reviews" },
+                { value: 600, suffix: "+", label: "WedMeGood reviews" },
+                { value: 300, suffix: "+", label: "WeddingWire reviews" },
+              ]}
+            />
+
+            <article className="tbw-article">
               <h3 className="mb-4">
                 With the Best Wedding Destination Near Mumbai – Touchwood Bliss, Igatpuri
               </h3>
-              <p>
+              <p className="tbw-lead">
                 {"If you are searching for "}
                 <strong>Wedding Muhurat 2026</strong>
                 {", "}
@@ -267,8 +279,43 @@ export default function P2026HinduWeddingDatesWithShubhMuhuratPage() {
                 Peak April, November and December 2026 muhurat dates are booked months in advance. Your
                 muhurat is sacred. Let the mountains witness it at Touchwood Bliss, Igatpuri.
               </p>
-            </div>
-          </section>
+            </article>
+
+            <section className="tbw-section">
+              <SectionTitle eyebrow="Moments" title="A glimpse of Touchwood Bliss" />
+              <Marquee
+                images={[
+                  { src: "/assets/img/reception.jpg", alt: "Couple entering their reception under string lights" },
+                  { src: "/assets/img/slider2.jpeg", alt: "Sunflower mandap on the lawn" },
+                  { src: "/assets/img/slider4.jpeg", alt: "Floral stage by the pool with mountains behind" },
+                  { src: "/assets/img/haldi_decor.jpeg", alt: "Yellow Haldi setup beside the pool" },
+                  { src: "/assets/img/gallery/wedding/wedding2.webp", alt: "Couple under a floral mandap" },
+                  { src: "/assets/img/gallery/reception/rec1.webp", alt: "Couple in a heart-shaped floral frame" },
+                  { src: "/assets/img/slider3.jpeg", alt: "Couple under a sunflower arch" },
+                  { src: "/assets/img/gallery/wedding/wedding1.webp", alt: "Bride and groom under a floral canopy" },
+                ]}
+              />
+            </section>
+
+            <section className="tbw-section">
+              <CtaBand
+                title="Ready to plan your fairytale wedding?"
+                text="Share your dates and ideas with the Touchwood Bliss team and let your celebration start taking shape in the hills of Igatpuri."
+              />
+            </section>
+
+            <section className="tbw-section">
+              <SectionTitle eyebrow="Keep reading" title="More wedding guides" />
+              <Related
+                items={[
+                  { href: "/say-i-do-in-the-beautiful-hills-of-touchwood-bliss", title: "This Wedding Season, Say ‘I Do’ in the Beautiful Hills of Touchwood Bliss", image: "/assets/img/banners/vowbanner.jpg" },
+                  { href: "/top-reasons-touchwood-bliss-perfect-pure-veg-wedding-venue", title: "Top Reasons Touchwood Bliss Is the Perfect Pure Veg Wedding Venue", image: "/assets/img/best-wedding-resort-near-mumbai.jpeg" },
+                  { href: "/where-forever-begins-magical-mountain-wedding-near-mumbai", title: "Where Forever Begins: A Magical Mountain Wedding Near Mumbai at Touchwood Bliss", image: "/assets/img/slider3.jpeg" },
+                ]}
+              />
+            </section>
+          </div>
+
           <div className="whatsapp">
             <a
               href="https://api.whatsapp.com/send?phone=917030060902&text=Hi, I would like to discuss further on the services offered by your Resort. Kindly Connect - Thanks"

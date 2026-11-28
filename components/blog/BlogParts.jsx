@@ -33,10 +33,13 @@ export function Hero({ image, alt, kicker, title, meta = [], fx }) {
       )}
       <div className="tbw-wrap tbw-hero__inner">
         <span className="tbw-hero__kicker">{kicker}</span>
-        <h1 className="tbw-hero__title tbw-wide" aria-label={title}>
+        <h1 className="tbw-hero__title tbw-wide">
           {words.map((w, i) => (
-            <span key={i} className="tbw-word" style={{ "--i": i }} aria-hidden="true">
-              {w}
+            <span key={i}>
+              <span className="tbw-word" style={{ "--i": i }}>
+                {w}
+              </span>
+              {i < words.length - 1 ? " " : ""}
             </span>
           ))}
         </h1>
