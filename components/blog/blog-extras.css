@@ -1,7 +1,3 @@
-/* ==========================================================
-   Touchwood Bliss – animated blog layout
-   Everything is scoped under .tbw-blog so existing pages are untouched.
-   ========================================================== */
 .tbw-blog {
   --tbw-pink: #ffa3c0;
   --tbw-pink-soft: #ffdfdf;
