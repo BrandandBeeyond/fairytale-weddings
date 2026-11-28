@@ -31,6 +31,8 @@ import WhereForeverBeginsMagicalMountainWeddingNearMumbaiPage from "./WhereForev
 import SayIDoInTheBeautifulHillsOfTouchwoodBlissPage from "./SayIDoInTheBeautifulHillsOfTouchwoodBlissPage";
 import MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage from "./MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage";
 import YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage from "./YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage";
+import MonsoonWeddingResortInIgatpuriTouchwoodBlissPage from "./MonsoonWeddingResortInIgatpuriTouchwoodBlissPage";
+import IgatpuriVsGoaDestinationWeddingNearMumbaiPage from "./IgatpuriVsGoaDestinationWeddingNearMumbaiPage";
 
 export const PAGE_COMPONENTS = {
   "2026-hindu-wedding-dates-with-shubh-muhurat": P2026HinduWeddingDatesWithShubhMuhuratPage,
@@ -63,4 +65,6 @@ export const PAGE_COMPONENTS = {
   "say-i-do-in-the-beautiful-hills-of-touchwood-bliss": SayIDoInTheBeautifulHillsOfTouchwoodBlissPage,
   "make-this-wedding-season-unforgettable-touchwood-bliss-resort-igatpuri": MakeThisWeddingSeasonUnforgettableTouchwoodBlissResortIgatpuriPage,
   "your-dream-wedding-awaits-celebrate-this-season-at-touchwood-bliss": YourDreamWeddingAwaitsCelebrateThisSeasonAtTouchwoodBlissPage,
+  "monsoon-wedding-resort-in-igatpuri-touchwood-bliss": MonsoonWeddingResortInIgatpuriTouchwoodBlissPage,
+  "igatpuri-vs-goa-destination-wedding-near-mumbai": IgatpuriVsGoaDestinationWeddingNearMumbaiPage,
 };

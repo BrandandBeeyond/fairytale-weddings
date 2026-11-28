@@ -17,6 +17,26 @@ export default function BlogsPage() {
               <div className="row mt-5">
                 <div className="col-lg-4 col-md-6 mb-4">
                   <div className="card shadow bg-transparent rounded-4 border-0 h-100">
+                    <img decoding="async" src="/assets/img/farmside.jpg" className="card-img-top object-fit-cover" style={{ height: "300px" }} alt="Monsoon Wedding Resort in Igatpuri" loading="lazy" />
+                    <div className="card-body bg-transparent">
+                      <h5 className="card-title">Monsoon Wedding Resort in Igatpuri: Rain, Mist and a Wedding to Remember</h5>
+                      <p className="card-text text-muted">Why the hills turn magical in the rains, what a rain-ready venue needs, and how to plan a monsoon wedding day with a Plan B.</p>
+                      <a href="/monsoon-wedding-resort-in-igatpuri-touchwood-bliss" className="btn sendform-btn">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="card shadow bg-transparent rounded-4 border-0 h-100">
+                    <img decoding="async" src="/assets/img/slider1.jpeg" className="card-img-top object-fit-cover" style={{ height: "300px" }} alt="Igatpuri vs Goa destination wedding" loading="lazy" />
+                    <div className="card-body bg-transparent">
+                      <h5 className="card-title">Why Couples Are Choosing Igatpuri Over Goa for Destination Weddings Near Mumbai</h5>
+                      <p className="card-text text-muted">An honest comparison of travel, food, guest comfort and rituals, and who should pick which.</p>
+                      <a href="/igatpuri-vs-goa-destination-wedding-near-mumbai" className="btn sendform-btn">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="card shadow bg-transparent rounded-4 border-0 h-100">
                     <img
                       decoding="async"
                       src="/assets/img/banners/vowbanner.jpg"
